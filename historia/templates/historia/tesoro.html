@@ -1,0 +1,25 @@
+{% extends "historia/base.html" %}
+
+
+{% block titulo %}El bosque verde{% endblock %}
+{% block capitulo %}Capitulo 3 de 4{% endblock %}
+{% block titulo_escena %}El bosque de los susurros{% endblock %}
+
+
+{% block texto %}
+    Cuando Nicole intentó abrir el cofre, escuchó un ruido detrás de ella. Era el antiguo guardián de la isla, un enorme pirata fantasma.
+    —Para llevarte el tesoro, tendrás que demostrar que eres una verdadera pirata —dijo el fantasma.
+    Nicole no tuvo miedo. Le explicó que no quería el tesoro solo para ella, sino que quería compartirlo con toda su tripulación.
+    El fantasma sonrió y desapareció lentamente.
+    <img src="{% static 'img/bienvenida.jpg' %}" alt="Bienvenida">
+{% endblock %}
+
+
+{% block opciones %}
+    <div class="opciones">
+        <a href="{% url 'historia_final_bueno' %}">Entrar a la cabana</a>
+        <a href="{% url 'historia_final_malo' %}">Ignorar y seguir caminando</a>
+        <a href="{% url 'historia_inicio' %}">Volver atras</a>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,11 @@
+{% extends "trivia/base.html" %}
+{% block titulo %}Pregunta 4{% endblock %}
+{% block contador %}Pregunta 4 de 4{% endblock %}
+{% block pregunta %}¿Como se llama el personaje principal de bloques de Minecraft"?{% endblock %}
+{% block opciones %}
+<div class="opciones">
+    <a href="{% url 'trivia_game_over' %}">Alex</a>
+    <a href="{% url 'trivia_game_over' %}">Creeper</a>
+    <a href="{% url 'trivia_win' %}">Steve</a>
+</div>
+{% endblock %}

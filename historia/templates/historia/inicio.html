@@ -1,0 +1,21 @@
+{% extends "historia/base.html" %}
+{% load static %}
+
+
+{% block titulo %}Inicio — Historia Interactiva{% endblock %}
+{% block capitulo %}Capitulo 1 de 4{% endblock %}
+{% block titulo_escena %}El famoso tesoro de la Isla{% endblock %}
+
+{% block texto %}
+    Nicole era una joven pirata que soñaba con encontrar el famoso Tesoro de la Isla Perdida. Un día, mientras revisaba un viejo barco abandonado, encontró un mapa dentro de una botella.
+    El mapa mostraba el camino hacia una isla misteriosa y tenía una advertencia: “Solo los valientes encontrarán el tesoro”.
+    Nicole decidió embarcarse en una aventura junto a su tripulación
+    <img src="{% static 'img/bienvenida.jpg' %}" alt="Bienvenida">
+{% endblock %}
+
+{% block opciones %}
+    <div class="opciones">
+        <a href="{% url 'historia_bosque' %}">Seguir el mapa y buscar el tesoro  </a>
+        <a href="{% url 'historia_torre' %}">Guardar el mapa y regresar a casa.</a>
+    </div>
+{% endblock %}

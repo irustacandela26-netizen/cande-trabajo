@@ -1,0 +1,21 @@
+{% extends "historia/base.html" %}
+
+
+{% block clase_extra %}final-bueno{% endblock %}
+{% block titulo %}Final Bueno{% endblock %}
+{% block capitulo %}Fin de la historia{% endblock %}
+{% block titulo_escena %}Lograste escapar{% endblock %}
+
+
+{% block texto %}
+    El cofre se abrió y apareció lleno de monedas de oro, joyas y piedras preciosas. Nicole y su tripulación regresaron al barco felices.
+    Nicole repartió el tesoro entre todos y utilizó una parte para ayudar a los habitantes de una pequeña isla cercana.
+    Desde aquel día, Nicole fue conocida como la pirata más generosa de todos los mares. Y continuó viajando por el mundo en busca de nuevas aventuras.
+{% endblock %}
+
+
+{% block opciones %}
+    <div class="reinicio">
+        <a href="{% url 'historia_inicio' %}">Leer de nuevo desde el principio</a>
+    </div>
+{% endblock %}

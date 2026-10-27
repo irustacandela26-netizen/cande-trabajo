@@ -1,0 +1,26 @@
+{% extends "historia/base.html" %}
+
+
+{% block titulo %}El bosque verde{% endblock %}
+{% block capitulo %}Capitulo 1 de 5{% endblock %}
+{% block titulo_escena %}La tormenta{% endblock %}
+
+
+{% block texto %}
+    Después de varios días navegando, una fuerte tormenta apareció en el mar. Las enormes olas golpeaban el barco y el viento hacía que las velas se movieran violentamente.
+    —¡Todos a sus puestos! —gritó Nicole.
+    La tripulación logró atravesar la tormenta y, al amanecer, vio una isla rodeada de enormes rocas.
+    —¡Hemos llegado! —exclamó Nicole.
+
+    ¿Cómo decide acercarse a la isla?
+{% endblock %}
+
+
+{% block opciones %}
+    <div class="opciones">
+        <a href="{% url 'historia_final_bueno' %}">Navegar con cuidado entre las rocas.</a>
+        <a href="{% url 'historia_final_malo' %}">Buscar una playa más segura para desembarcar</a>
+        <a href="{% url 'historia_inicio' %}">Asustarse y regresar a casa.</a>
+    </div>
+{% endblock %}
+

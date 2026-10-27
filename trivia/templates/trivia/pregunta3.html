@@ -1,0 +1,11 @@
+{% extends "trivia/base.html" %}
+{% block titulo %}Pregunta 3{% endblock %}
+{% block contador %}Pregunta 3 de 4{% endblock %}
+{% block pregunta %}¿Que juego popularizo la frase "Finish Him"?{% endblock %}
+{% block opciones %}
+<div class="opciones">
+    <a href="{% url 'trivia_pregunta4' %}">Mortal Kombat</a>
+    <a href="{% url 'trivia_game_over' %}">Fortnite</a>
+    <a href="{% url 'trivia_game_over' %}">Uncharted</a>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "historia/base.html" %}
+
+
+{% block clase_extra %}final-bueno{% endblock %}
+{% block titulo %}Final Malo{% endblock %}
+{% block capitulo %}Fin de la historia{% endblock %}
+{% block titulo_escena %}No Lograste escapar{% endblock %}
+
+
+{% block texto %}
+    Pero si Nicole hubiera decidido quedarse con todo el tesoro, el fantasma habría regresado.
+    —Una verdadera pirata no abandona a su tripulación —dijo.
+    De repente, el tesoro desapareció y la cueva comenzó a derrumbarse. Nicole y sus compañeros corrieron hacia la salida y apenas lograron escapar.
+    Cuando regresaron al barco, descubrieron que no quedaba ni una sola moneda de oro. Nicole aprendió que la codicia podía hacer que hasta el mayor tesoro desapareciera.
+{% endblock %}
+
+
+{% block opciones %}
+    <div class="reinicio">
+        <a href="{% url 'historia_inicio' %}">Leer de nuevo desde el principio</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "trivia/base.html" %}
+{% block titulo %}Pregunta 2{% endblock %}
+{% block contador %}Pregunta 2 de 4{% endblock %}
+{% block pregunta %}¿Cual era el nombre original de Pac-Man en Japon?{% endblock %}
+{% block opciones %}
+<div class="opciones">
+    <a href="{% url 'trivia_game_over' %}">Pac-Men</a>
+    <a href="{% url 'trivia_game_over' %}">Puck-Men</a>
+    <a href="{% url 'trivia_pregunta3' %}">Puck-Man</a>
+</div>
+{% endblock %}
